@@ -14,7 +14,7 @@ Tras finalizar, deberemos ejecutar el comando `docker-compose down` para así el
 
 ## Kaggle
 
-Cada vez que se suben cambios a la rama `main`, la libreta de Jupyter (especificada en el apartado `code_file` del fichero `kernel-metadata.json`) se ejecuta y [publica](https://www.kaggle.com/alfaro96/data-mining-jupyter-introduction) en los servidores de Kaggle a través del flujo de trabajo `Kaggle kernel publisher`. Por tanto, se hace necesario disponer de una cuenta en Kaggle, que se puede crear a través de [este enlace](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
+Cada vez que se suben cambios a la rama `main`, la libreta de Jupyter (especificada en el apartado `code_file` del fichero `kernel-metadata.json`) se ejecuta y [publica](https://www.kaggle.com/alfaro96/data-mining-introduction-jupyter) en los servidores de Kaggle a través del flujo de trabajo `Kaggle kernel publisher`. Por tanto, se hace necesario disponer de una cuenta en Kaggle, que se puede crear a través de [este enlace](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
 
 Tras ello, se debe [crear un *token*](https://www.kaggle.com/docs/api#getting-started-installation-&-authentication) para poder usar la *API* pública de Kaggle, y posteriormente [añadir las variables secretas](https://docs.github.com/en/actions/reference/encrypted-secrets) `KAGGLE_KEY` y `KAGGLE_USERNAME` con los valores correspondientes.
 
@@ -24,4 +24,4 @@ Por último y antes de subir ningún cambio, se debe modificar el fichero `kerne
 
 Dado que las libretas de Jupyter generan ficheros con metadatos, código fuente, texto formateado y multimedia, las soluciones convencionales para realizar un control de versiones no son las más adecuadas, pues, a pesar de tratarse de un fichero `JSON`, no siguen un formato fácilmente legible. Por ello, vamos a usar la aplicación Review NB que, entre otros, se encarga de proporcionar una diferencia visual para cada *commit* y *pull request*, lo que la hace ideal para nuestro entorno de trabajo.
 
-Instalar esta aplicación es muy sencillo, pues solamente tendremos que [iniciar sesión](https://github.com/login/oauth/authorize?client_id=Iv1.b2736a9bd3b3e896) en el [sitio web](https://www.reviewnb.com) y autorizar su uso en el repositorio correspondiente (en este caso, `data-mining-introduction-jupyter`).
+Instalar esta aplicación es muy sencillo, pues solamente tendremos que [iniciar sesión](https://github.com/login/oauth/authorize?client_id=Iv1.b2736a9bd3b3e896) y autorizar su uso en el repositorio correspondiente (en este caso, `data-mining-introduction-jupyter`). Tras esto, ya tendremos acceso al [sitio web](https://app.reviewnb.com/alfaro96/data-mining-introduction-jupyter) correspondiente.
